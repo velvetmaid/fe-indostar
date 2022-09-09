@@ -1,0 +1,39 @@
+.banner-container {
+    background: rgb(0, 136, 128);
+    background: linear-gradient(0deg, rgba(0, 136, 128, 1) 15%, rgba(17, 187, 161, 1) 52%, rgba(0, 255, 211, 1) 100%);
+}
+
+.banner-wrapper>.logo {
+    display: block;
+    margin: auto;
+    width: 124px;
+    padding-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-wrapper>.logo {
+        width: 96px;
+    }
+}
+
+.banner-wrapper {
+    padding: 3rem;
+}
+
+.banner-wrapper h1,
+p {
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+}
+
+.banner-wrapper img {
+    width: 65%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}

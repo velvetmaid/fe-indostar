@@ -1,0 +1,21 @@
+.container {
+    background-color: rgb(220 220 220);
+}
+
+.description {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .description {
+        width: 100%;
+    }
+}
+
+.description p,
+h1 {
+    color: #000;
+    text-align: start;
+}
