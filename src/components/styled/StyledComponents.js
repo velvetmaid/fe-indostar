@@ -35,3 +35,10 @@ export const ImgShadow = styled.img`
     max-width: 90%;
   }
 `;
+
+export const Card = styled.div`
+  margin: 0 1rem;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 1rem;
+`;
