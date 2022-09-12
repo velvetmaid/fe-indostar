@@ -1,0 +1,31 @@
+.bg-white {
+    background: #fff;
+}
+
+.bronze {
+    background: #c5dcdf;
+}
+
+.gold {
+    background: #d8c497;
+}
+
+.diamond {
+    background: #c9cc2a;
+}
+
+.bronze,
+.gold,
+.diamond {
+    width: 25%;
+    height: 700px;
+}
+
+@media only screen and (max-width: 768px) {
+    .bronze,
+    .gold,
+    .diamond {
+        height: auto;
+        width: 90%;
+    }
+}
