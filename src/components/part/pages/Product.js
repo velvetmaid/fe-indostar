@@ -36,6 +36,7 @@ function Product() {
       {SpecificationProduct()}
       {ProductSecond()}
       {ProductThird()}
+      {SpecificationProductLast()}
     </>
   );
 
@@ -131,6 +132,71 @@ function Product() {
             </div>
           </WrapperFlex>
         </div>
+      </Container>
+    );
+  }
+
+  function SpecificationProduct() {
+    return (
+      <Container>
+        <WrapperFlex>
+          <div className="row">
+            <div className="column">
+              <h2>1. Metode Hafalan 5 Waktu</h2>
+              <img src="images/Isi 111/metodehafalan.png" />
+              <p>
+                Dilengkapi dengan Metode Hafalan 5 Waktu yang dapat membantu
+                kita dalam menghafal
+              </p>
+            </div>
+            <div className="column-strip-pl">
+              <h2>2. Motivasi Hafalan</h2>
+              <img src="images/Isi 111/motivasi hafalan.png" />
+              <p>
+                Terdapat Motivasi dalam menghafal Al-Qur'an disetiap halamannya
+              </p>
+            </div>
+            <div className="column-strip-pr">
+              <h2>3. Tema Ayat</h2>
+              <img src="images/Isi 111/tema ayat.png" />
+              <p>Tema Ayat pada setiap halamannya</p>
+            </div>
+            <div className="column">
+              <h2>4. Terjemah</h2>
+              <img src="images/Isi 111/terjemah.png" />
+              <p>
+                Terjemah Standar <strong>KEMENAG RI</strong>
+              </p>
+            </div>
+          </div>
+        </WrapperFlex>
+      </Container>
+    );
+  }
+
+  function SpecificationProductLast() {
+    return (
+      <Container>
+        <WrapperFlex>
+          <div className="row">
+            <div className="column">
+              <h2>1. Tajwid Warna</h2>
+              <img src="images/Kode isi 801/tajwid warna.png" />
+              <p>
+                Dilengkapi dengan Tajwid warna yang memudahkan kita dalam
+                membaca
+              </p>
+            </div>
+            <div className="column-strip-pl">
+              <h2>2. Petunjuk Tajwid</h2>
+              <img src="images/Kode isi 801/Petunjuk Tajwid.png" />
+              <p>
+                Dilengkapi dengan petunjuk Tajwid yang memudahkan kita dalam
+                membaca sesuai hukum Tajwid
+              </p>
+            </div>
+          </div>
+        </WrapperFlex>
       </Container>
     );
   }
