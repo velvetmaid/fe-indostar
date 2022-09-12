@@ -1,6 +1,6 @@
 .banner-container {
     background: rgb(0, 136, 128);
-    background: linear-gradient(0deg, rgba(0, 136, 128, 1) 15%, rgba(17, 187, 161, 1) 52%, rgba(0, 255, 211, 1) 100%);
+    background: linear-gradient(0deg, rgba(0, 136, 128, 1) 15%, #1aadac 52%, #1ebdbd 100%);
 }
 
 .banner-wrapper>.logo {

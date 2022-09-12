@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SliderData } from "./SliderData";
+import { SliderData } from "./ImageSliderData";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "./ImageSlider.css";
 
