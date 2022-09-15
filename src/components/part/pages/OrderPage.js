@@ -8,6 +8,8 @@ import {
 } from "react-icons/io";
 import "./OrderPage.css";
 import { useState } from "react";
+import { DataDesignSlider } from "./data/SliderData";
+import DesignSlider from "../slider/DesignSlider";
 
 function OrderPage() {
   const [count, useCounter] = useState(0);
@@ -67,7 +69,8 @@ function OrderPage() {
               <div className="box box-half input-value-b">
                 <label>
                   <IoIosArrowBack />
-
+                  <h4>TESTING</h4>
+                  <DesignSlider slides={DataDesignSlider} />
                   <IoIosArrowForward />
                 </label>
               </div>

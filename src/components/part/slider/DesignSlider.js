@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { DataImageSlider } from "../pages/data/SliderData";
+import { DataDesignSlider } from "../pages/data/SliderData";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import "./ImageSlider.css";
 
-function ImageSlider({ slides }) {
+function DesignSlider({ slides }) {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -21,14 +20,17 @@ function ImageSlider({ slides }) {
     <div className="slider">
       <IoIosArrowBack className="left-arrow" onClick={prevSlide} />
       <IoIosArrowForward className="right-arrow" onClick={nextSlide} />
-      {DataImageSlider.map((slide, index) => {
+      {DataDesignSlider.map((slide, index) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
             key={index}
           >
             {index === current && (
-              <img src={slide.image} className="image" alt="none" />
+              <>
+                <img src={slide.image} className="image" alt="none" />
+                <h1>{slide.design}</h1>
+              </>
             )}
           </div>
         );
@@ -37,4 +39,4 @@ function ImageSlider({ slides }) {
   );
 }
 
-export default ImageSlider;
+export default DesignSlider;

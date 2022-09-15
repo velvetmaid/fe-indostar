@@ -1,7 +1,7 @@
 import React from "react";
 import ImageSlider from "../slider/ImageSlider";
 import { HeroContainer, WrapperFlex } from "../../styled/StyledComponents";
-import { SliderData } from "../slider/ImageSliderData";
+import { DataImageSlider } from "../pages/data/SliderData";
 import './CustomPage.css'
 
 function CustomPage() {
@@ -16,7 +16,7 @@ function CustomPage() {
             "
           </p>
         </div>
-        <ImageSlider slides={SliderData} />
+        <ImageSlider slides={DataImageSlider} />
       </WrapperFlex>
     </HeroContainer>
   );
