@@ -161,7 +161,7 @@ function Product() {
             <div className="row">
               <div className="column">
                 <h2>1. Tajwid Warna</h2>
-                <img src="images/Kode isi 801/tajwid warna.png" />
+                <img src="images/Kode isi 801/tajwid warna.png" alt="Tajwid Warna" />
                 <p>
                   Dilengkapi dengan Tajwid warna yang memudahkan kita dalam
                   membaca
@@ -169,7 +169,7 @@ function Product() {
               </div>
               <div className="column-strip-pl">
                 <h2>2. Petunjuk Tajwid</h2>
-                <img src="images/Kode isi 801/Petunjuk Tajwid.png" />
+                <img src="images/Kode isi 801/Petunjuk Tajwid.png" alt="Petunjuk Tajwid" />
                 <p>
                   Dilengkapi dengan petunjuk Tajwid yang memudahkan kita dalam
                   membaca sesuai hukum Tajwid
