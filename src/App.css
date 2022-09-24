@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Rubik&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Qwitcher+Grypen:wght@700&family=Rubik:wght@800&family=Work+Sans:wght@500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,7 +12,8 @@
 body,
 h1 {
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: -.5px;
 }
 
 h1 {
@@ -21,4 +22,18 @@ h1 {
 
 p {
     font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
