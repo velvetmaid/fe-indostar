@@ -1,5 +1,11 @@
 .container {
     background-color: rgb(220 220 220);
+    height: 100vh !important;
+    display: flex;
+}
+
+.wrapper {
+    margin: 0 2rem;
 }
 
 .description {
@@ -8,14 +14,31 @@
     padding: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    .description {
-        width: 100%;
-    }
-}
-
 .description p,
 h1 {
     color: #000;
     text-align: start;
+}
+
+.description p {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 2rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .description {
+        width: 100%;
+    }
+
+    .description p,
+    .description h1 {
+        text-align: center !important;
+        padding: 0;
+
+    }
+
+    .description p {
+        font-size: 14px;
+    }
 }

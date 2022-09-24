@@ -2,6 +2,11 @@
     background: #fff;
 }
 
+.pkg-heading {
+    text-align: center;
+}
+
+
 .bronze {
     background: #c5dcdf;
 }
@@ -17,15 +22,33 @@
 .bronze,
 .gold,
 .diamond {
-    width: 25%;
-    height: 700px;
+    width: 28%;
+    min-height: 450px;
+}
+
+.bronze h1,
+.gold h1,
+.diamond h1,
+span {
+    padding: 1.5rem 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: "✔ ";
+    font-size: 16px;
+    text-align: start;
+    padding: 16px;
 }
 
 @media only screen and (max-width: 768px) {
+
     .bronze,
     .gold,
     .diamond {
         height: auto;
-        width: 90%;
+        width: 65%;
+        margin: 1rem;
     }
 }
