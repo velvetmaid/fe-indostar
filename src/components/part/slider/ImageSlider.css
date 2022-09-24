@@ -2,37 +2,67 @@
     position: relative;
     width: 50%;
     height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grand {
+    position: relative;
+}
+
+.slider2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: contents;
 }
 
 .image {
     width: 100%;
     object-fit: fill;
+    display: block;
     margin: auto;
 }
 
-.left-arrow {
+.left-arrowImg,
+.right-arrowImg {
     position: absolute;
     top: 40%;
-    left: 0px;
+}
+
+.left-arrowImg {
+    left: 0;
     font-size: 3rem;
     color: #808080;
-    z-index: 10;
+    z-index: 999;
     cursor: pointer;
     user-select: none;
 }
 
-.right-arrow {
-    position: absolute;
-    top: 40%;
-    right: 0px;
+.right-arrowImg {
+    right: 0;
     font-size: 3rem;
     color: #808080;
-    z-index: 10;
+    z-index: 999;
     cursor: pointer;
     user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-arrowImg {
+        left: -20px;
+    }
+
+    .right-arrowImg {
+        right: -20px;
+    }
+
+    .left-arrowImg,
+    .right-arrowImg {
+        top: 35%;
+    }
 }
 
 .slide {
