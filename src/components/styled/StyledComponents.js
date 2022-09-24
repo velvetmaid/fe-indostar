@@ -6,6 +6,11 @@ export const Container = styled.div`
   padding: 1rem 0;
 `;
 
+export const ContainerWrap = styled.div`
+  max-width: 1200px;
+  margin: auto;
+`;
+
 export const HeroContainer = styled.div`
   height: 100%;
   width: 100%;
@@ -37,7 +42,7 @@ export const ImgShadow = styled.img`
 `;
 
 export const Card = styled.div`
-  margin: 0 1rem;
+  margin: 1rem;
   overflow: hidden;
   border-radius: 8px;
   padding: 1rem;
