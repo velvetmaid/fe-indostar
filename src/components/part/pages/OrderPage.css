@@ -2,6 +2,13 @@
     background: #116d66;
 }
 
+.bg-last h1,
+.bg-last h2 {
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
 .bg-last-card {
     background: #dddcdc;
     padding: 1rem 3rem !important;
@@ -35,6 +42,7 @@ input,
     border-radius: 3px;
     padding: 0 .5rem;
     height: 23px;
+    word-wrap: break-word;
 }
 
 .box label {
@@ -42,6 +50,7 @@ input,
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    word-wrap: break-word;
 }
 
 input:focus {
@@ -84,13 +93,27 @@ input:focus {
 }
 
 .preview {
+    height: 100%;
     grid-column: 3;
     grid-row: 2 / 5;
-    height: 100%;
+    background: none;
 }
 
-.input-numeric {
+.input-val {
     text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .input-disabled-a,
+    .input-disabled-b,
+    .input-disabled-c {
+        width: 92.5px;
+    }
+
+    input {
+        font-size: 12px;
+    }
 }
 
 button {
@@ -114,4 +137,11 @@ button {
 button:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     transform: translateY(-1px);
+}
+
+.preview-img {
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
 }
