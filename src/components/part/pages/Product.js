@@ -52,7 +52,10 @@ function Product() {
             <div className="row">
               <div className="column">
                 <h2>1. Metode Hafalan 5 Waktu</h2>
-                <img src="images/Isi 111/metodehafalan.png" />
+                <img
+                  src="images/Isi 111/metodehafalan.png"
+                  alt="Metode Hafalan"
+                />
                 <p>
                   Dilengkapi dengan Metode Hafalan 5 Waktu yang dapat membantu
                   kita dalam menghafal
@@ -60,7 +63,10 @@ function Product() {
               </div>
               <div className="column-strip-pl">
                 <h2>2. Motivasi Hafalan</h2>
-                <img src="images/Isi 111/motivasi hafalan.png" />
+                <img
+                  src="images/Isi 111/motivasi hafalan.png"
+                  alt="Motivasi Hafalan"
+                />
                 <p>
                   Terdapat Motivasi dalam menghafal Al-Qur'an disetiap
                   halamannya
@@ -68,12 +74,12 @@ function Product() {
               </div>
               <div className="column-strip-pr">
                 <h2>3. Tema Ayat</h2>
-                <img src="images/Isi 111/tema ayat.png" />
+                <img src="images/Isi 111/tema ayat.png" alt="Tema Ayat" />
                 <p>Tema Ayat pada setiap halamannya</p>
               </div>
               <div className="column">
                 <h2>4. Terjemah</h2>
-                <img src="images/Isi 111/terjemah.png" />
+                <img src="images/Isi 111/terjemah.png" alt="Terjemah" />
                 <p>
                   Terjemah Standar <strong>KEMENAG RI</strong>
                 </p>
@@ -142,47 +148,6 @@ function Product() {
               </div>
             </WrapperFlex>
           </div>
-        </ContainerWrap>
-      </Container>
-    );
-  }
-
-  function SpecificationProduct() {
-    return (
-      <Container>
-        <ContainerWrap>
-          <WrapperFlex>
-            <div className="row">
-              <div className="column">
-                <h2>1. Metode Hafalan 5 Waktu</h2>
-                <img src="images/Isi 111/metodehafalan.png" />
-                <p>
-                  Dilengkapi dengan Metode Hafalan 5 Waktu yang dapat membantu
-                  kita dalam menghafal
-                </p>
-              </div>
-              <div className="column-strip-pl">
-                <h2>2. Motivasi Hafalan</h2>
-                <img src="images/Isi 111/motivasi hafalan.png" />
-                <p>
-                  Terdapat Motivasi dalam menghafal Al-Qur'an disetiap
-                  halamannya
-                </p>
-              </div>
-              <div className="column-strip-pr">
-                <h2>3. Tema Ayat</h2>
-                <img src="images/Isi 111/tema ayat.png" />
-                <p>Tema Ayat pada setiap halamannya</p>
-              </div>
-              <div className="column">
-                <h2>4. Terjemah</h2>
-                <img src="images/Isi 111/terjemah.png" />
-                <p>
-                  Terjemah Standar <strong>KEMENAG RI</strong>
-                </p>
-              </div>
-            </div>
-          </WrapperFlex>
         </ContainerWrap>
       </Container>
     );
