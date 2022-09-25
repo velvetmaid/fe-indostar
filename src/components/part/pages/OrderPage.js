@@ -10,37 +10,50 @@ import "./OrderPage.css";
 import DesignSlider from "../slider/DesignSlider";
 
 function OrderPage() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    let num = "6282258640991";
+    let msg = "*Saya Mau Dong !*";
+    let url = `https://web.whatsapp.com/send?phone=${num}`;
+
+    url += `&text=${msg}&app_absent=0`;
+    /* url += `&text=${encodeURI()}&app_absent=0`;
+     */
+    window.open(url);
+
+    console.log("form submitted ✅");
+  };
   return (
     <Container className="bg-last">
       <ContainerWrap>
         <h1>Karena Promo dan Kuota Terbatas</h1>
         <h2>Yuk Isi Form Pesananmu Sekarang!</h2>
-        <p>Caranya klik “Saya mau dong” untuk melanjutkan</p>
-        <p>order melalui whatsapp admin kami</p>
+        <p>
+          Caranya klik “Saya mau dong” untuk melanjutkan<br></br>order melalui
+          whatsapp admin kami
+        </p>
         <Card className="bg-last-card">
           <WrapperFlex>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="form-wrapper">
                 <DesignSlider slides={DataSlider} />
               </div>
-              <div className="button">{sendButtonWa()}</div>
+              <div className="button">
+                <button
+                  class="sendFormWa"
+                  type="submit"
+                  title="Send to WhatsApp"
+                >
+                  Saya Mau Dong!
+                </button>
+              </div>
             </form>
           </WrapperFlex>
         </Card>
       </ContainerWrap>
     </Container>
   );
-
-  function sendButtonWa() {
-    return (
-      <button
-        onclick='window.location.href = "https://stackoverflow.com"'
-        type="submit"
-      >
-        Saya Mau Dong!
-      </button>
-    );
-  }
 }
 
 export default OrderPage;
