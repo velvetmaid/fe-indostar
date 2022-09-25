@@ -25,7 +25,12 @@ function ContentSlider({ slides }) {
             {index === current && (
               <>
                 <IoIosArrowBack className="left-arrow" onClick={prevSlide} />
-                <input className="input-val" id="valContent" name="content" value={slide.content} />
+                <input
+                  className="input-val"
+                  id="valContent"
+                  value={slide.content}
+                  name="content"
+                />
                 <IoIosArrowForward
                   className="right-arrow"
                   onClick={nextSlide}

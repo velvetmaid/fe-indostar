@@ -111,7 +111,7 @@ function Product() {
                   Premium
                 </p>
                 <p>
-                  Al-Qur'an madinah dengantampilan full page yang dapat
+                  Al-Qur'an madinah dengan tampilan full page yang dapat
                   memudahkan kita dalam membacanya
                 </p>
               </div>

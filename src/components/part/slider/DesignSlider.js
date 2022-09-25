@@ -19,6 +19,9 @@ function DesignSlider({ slides }) {
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
+
+
+  
   return (
     <div className="slider2">
       {DataSlider.map((slide, index) => {
@@ -30,7 +33,7 @@ function DesignSlider({ slides }) {
                   <label>
                     <input
                       id="valName"
-                      name="name"
+                      name="fullName"
                       type="text"
                       placeholder="Nama Lengkap"
                     />
