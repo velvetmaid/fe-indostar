@@ -15,9 +15,9 @@ function OrderPage() {
 
     let num = "6282258640991";
     let msg = "*Saya Mau Dong !*";
-    let url = `https://web.whatsapp.com/send?phone=${num}`;
+    let url = `https://wa.me/${num}?text=${msg}`;
 
-    url += `&text=${msg}&app_absent=0`;
+/*     url += `?text=${msg}'`; */
     /* url += `&text=${encodeURI()}&app_absent=0`;
      */
     window.open(url);
