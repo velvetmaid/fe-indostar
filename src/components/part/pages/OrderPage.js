@@ -21,7 +21,7 @@ function OrderPage() {
     let msg = "*Saya Mau Dong !*";
     let url = `https://wa.me/${num}`;
 
-    url += `?text=${msg}+%0A%0A+*Name Lengkap* :+${fName}+%0A+*Jumlah* :+${fQty}+%0A+*Desain* :+${fDesign}+%0A+*Isi* :+${fContent}+%0A`;
+    url += `?text=${msg}+%0A%0A+*Nama Lengkap* :+${fName}+%0A+*Jumlah* :+${fQty}+%0A+*Desain* :+${fDesign}+%0A+*Isi* :+${fContent}+%0A`;
     
     /* url += `&text=${encodeURI()}&app_absent=0`; */
     window.open(url);
