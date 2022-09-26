@@ -13,13 +13,17 @@ function OrderPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    let fName = document.getElementById("valName").value;
+    let fQty = document.getElementById("valQty").value;
+    let fDesign = document.getElementById("valDesign").value;
+    let fContent = document.getElementById("valContent").value;
     let num = "6282258640991";
     let msg = "*Saya Mau Dong !*";
-    let url = `https://wa.me/${num}?text=${msg}`;
+    let url = `https://wa.me/${num}`;
 
-/*     url += `?text=${msg}'`; */
-    /* url += `&text=${encodeURI()}&app_absent=0`;
-     */
+    url += `?text=${msg}+%0A%0A+*Name Lengkap* :+${fName}+%0A+*Jumlah* :+${fQty}+%0A+*Desain* :+${fDesign}+%0A+*Isi* :+${fContent}+%0A`;
+    
+    /* url += `&text=${encodeURI()}&app_absent=0`; */
     window.open(url);
 
     console.log("form submitted ✅");
