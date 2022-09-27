@@ -20,8 +20,6 @@ function DesignSlider({ slides }) {
     return null;
   }
 
-
-  
   return (
     <div className="slider2">
       {DataSlider.map((slide, index) => {
@@ -36,6 +34,7 @@ function DesignSlider({ slides }) {
                       name="fullName"
                       type="text"
                       placeholder="Nama Lengkap"
+                      required
                     />
                   </label>
                 </div>
