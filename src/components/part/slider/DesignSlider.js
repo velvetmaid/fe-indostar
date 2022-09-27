@@ -93,24 +93,29 @@ function DesignSlider({ slides }) {
   );
 
   function SlideJumlah() {
-    const [count, useCounter] = useState(0);
-
+    const [counter, setCounter] = useState(1);
+    const AddQty = () => setCounter(counter + 1);
+    let RemoveQty = () => setCounter(counter - 1);
+    if (counter <= 1) {
+      RemoveQty = () => setCounter(1);
+    }
+    /* const [count, useCounter] = useState(1);
     const AddQty = () => {
       useCounter(count + 1);
     };
     const RemoveQty = () => {
-      let value = 0;
+      let value = 1;
       if (count <= value) {
         value = 1;
       } else {
         value = count;
       }
       useCounter(value - 1);
-    };
+    }; */
     return (
       <>
         <IoIosRemove onClick={() => RemoveQty()} />
-        <input className="input-val" id="valQty" name="qyt" value={count} />
+        <input className="input-val" id="valQty" name="qyt" value={counter} />
         <IoIosAdd onClick={() => AddQty()} />
       </>
     );
